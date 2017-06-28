@@ -1,0 +1,119 @@
+<h2><%= t(:show, :default => "Show") %> <%= t('app.models.resume.bs_caption', :default => 'resume') %></h2>
+
+<p>
+    <b><%= t('app.models.resume.bs_attributes.name', :default => 'name') %>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp</b>
+    <%= @resume.name %>
+</p>
+<p>
+  <b><%= t('app.models.resume.bs_attributes.email', :default => 'email') %>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp</b>
+    <%= @resume.email %>
+</p>
+<p>
+  <b><%= t('app.models.resume.bs_attributes.phone', :default => 'phone') %>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp</b>
+    <%= @resume.phone %>
+</p>
+<p>
+  <b><%= t('app.models.resume.bs_attributes.address', :default => 'address') %>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp</b>
+    <%= @resume.address %>
+</p>
+<p>
+  <b><%= t('app.models.resume.bs_attributes.dob', :default => 'dob') %>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp</b>
+  <%= @resume.month %>-
+   <%= @resume.day %>-
+   <%= @resume.year %>
+</p>
+<p>
+  <b><%= t('app.models.resume.bs_attributes.objectives', :default => 'objectives') %>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp</b>
+    <%= @resume.objectives %>
+</p>
+<p>
+  <b><%= t('app.models.resume.bs_attributes.school_name', :default => 'school_name') %>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp</b>
+    <%= @resume.school_name %>
+</p>
+<p>
+  <b><%= t('app.models.resume.bs_attributes.school_board', :default => 'school_board') %>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp</b>
+    <%= @resume.school_board %>
+</p>
+<p>
+  <b><%= t('app.models.resume.bs_attributes.tenth_percentage', :default => 'tenth_percentage') %>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp</b>
+    <%= @resume.tenth_percentage %>
+</p>
+<p>
+  <b><%= t('app.models.resume.bs_attributes.plus_two', :default => 'plus_two') %>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp</b>
+    <%= @resume.plus_two %>
+</p>
+<p>
+  <b><%= t('app.models.resume.bs_attributes.plus_board', :default => 'plus_board') %>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp</b>
+    <%= @resume.plus_board %>
+</p>
+<p>
+  <b><%= t('app.models.resume.bs_attributes.plus_two_percentage', :default => 'plus_two_percentage') %>&nbsp&nbsp&nbsp:</b>
+    <%= @resume.plus_two_percentage %>
+</p>
+<p>
+  <b><%= t('app.models.resume.bs_attributes.college', :default => 'college') %>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp</b>
+    <%= @resume.college %>
+</p>
+<p>
+  <b><%= t('app.models.resume.bs_attributes.university', :default => 'university') %>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp</b>
+    <%= @resume.university %>
+</p>
+<p>
+  <b><%= t('app.models.resume.bs_attributes.graduation_percentage', :default => 'graduation_percentage') %>:</b>
+    <%= @resume.graduation_percentage %>
+</p>
+<p>
+  <b><%= t('app.models.resume.bs_attributes.pg_college', :default => 'pg_college') %>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp</b>
+    <%= @resume.pg_college %>
+</p>
+<p>
+  <b><%= t('app.models.resume.bs_attributes.pg_university', :default => 'pg_university') %>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp</b>
+    <%= @resume.pg_university %>
+</p>
+<p>
+  <b><%= t('app.models.resume.bs_attributes.pg_percentage', :default => 'pg_percentage') %>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp</b>
+    <%= @resume.pg_percentage %>
+</p>
+
+<p>
+  <b><%= t('app.models.resume.bs_attributes.technology', :default => 'technology') %>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp</b>
+    <%= @resume.technology %>
+</p>
+<!-- <p>
+  <b><%= t('app.models.resume.bs_attributes.degree', :default => 'degree') %>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp</b>
+    <%= @resume.degree %>
+</p> -->
+<p>
+  <b><%= t('app.models.resume.bs_attributes.projects', :default => 'projects') %>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp</b>
+    <%= @resume.projects %>
+</p>
+<p>
+  <b><%= t('app.models.resume.bs_attributes.seminars_attended', :default => 'seminars_attended') %>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp</b>
+    <%= @resume.seminars_attended %>
+</p>
+<!-- <p>
+  <b><%= t('app.models.resume.bs_attributes.skills', :default => 'skills') %>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp</b>
+    <%= @resume.skills %>
+</p> -->
+<p>
+  <b><%= t('app.models.resume.bs_attributes.years_of_experience', :default => 'years_of_experience') %>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp</b>
+    <%= @resume.years_of_experience %>
+</p>
+<p>
+  <b><%= t('app.models.resume.bs_attributes.work_place', :default => 'work_place') %>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp</b>
+    <%= @resume.work_place %>
+</p>
+
+<p>
+  <b><%= t('app.models.resume.bs_attributes.additional', :default => 'additional') %>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp</b>
+    <%= @resume.additional %>
+</p>
+<p>
+   <b><%= t('app.models.resume.bs_attributes.location', :default => 'location') %>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp</b>
+     <%= @resume.location %>
+ </p>
+
+<!-- Beautiful_scaffold - AddField - Field - Do not remove -->
+
+<%= link_to t(:edit, :default => "Edit"), edit_resume_path(@resume), :class => "btn btn-default" %>
+<%= link_to t(:back, :default => "Back"), resumes_path, :class => "btn btn-default" %>

@@ -1,0 +1,163 @@
+
+<%= form_for(@resume) do |f| %>
+  <% if @resume.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@resume.errors.count, "error") %> prohibited this resume from being saved:</h2>
+
+      <ul>
+        <% @resume.errors.full_messages.each do |msg| %><li><%= msg %></li><% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div style="color:#0000FF">
+<div class="col-md-4">
+<fieldset>
+  <legend>Personal</legend>
+      <div class="form-group">
+        <%= f.label :name, t('app.models.resume.bs_attributes.name', :default => 'name').capitalize, :class => "control-label" %>
+        <%= f.text_field :name,placeholder: "Enter Name", :class => "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :email, t('app.models.resume.bs_attributes.email', :default => 'email').capitalize, :class => "control-label" %>
+        <%= f.text_field :email,placeholder: "Enter Email", :class => "form-control", type: 'email' %>
+      </div>
+      <div class="form-group">
+        <%= f.label :phone, t('app.models.resume.bs_attributes.phone', :default => 'phone').capitalize, :class => "control-label" %>
+        <%= f.text_field :phone,placeholder: "Enter Mobile no", :class => "form-control", type: 'phone' %>
+      </div>
+      <div class="form-group">
+        <%= f.label :address, t('app.models.resume.bs_attributes.address', :default => 'address').capitalize, :class => "control-label" %>
+        <%= f.text_area :address,  :rows => 5,placeholder: "Enter Address", :class => "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :dob, t('app.models.resume.bs_attributes.dob', :default => 'dob').capitalize, :class => "control-label" %><br>
+        <%= f.label :month, t('app.models.resume.bs_attributes.month', :default => 'month').capitalize, :class => "control-label" %>
+        <%= f.select :month, (1..12).to_a %>
+        <%= f.label :day, t('app.models.resume.bs_attributes.day', :default => 'day').capitalize, :class => "control-label" %>
+        <%= f.select :day, (1..31).to_a %>
+        <%= f.label :year, t('app.models.resume.bs_attributes.year', :default => 'year').capitalize, :class => "control-label" %>
+        <%= f.select :year, ((Time.now.year - 20)..Time.now.year).to_a %>
+      </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>career objectives</legend>
+    <div class="form-group">
+      <%= f.label :objectives, t('app.models.resume.bs_attributes.objectives', :default => 'objectives').capitalize, :class => "control-label" %>
+      <%= f.text_area :objectives,  :rows => 5,placeholder: "Enter Objectives", :class => "form-control" %>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Education Qualifications</legend>
+    <div class="form-group">
+      <%= f.label :school_name, t('app.models.resume.bs_attributes.school_name', :default => 'school_name').capitalize, :class => "control-label" %>
+      <%= f.text_field :school_name,placeholder: "Enter School_name", :class => "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :school_board, t('app.models.resume.bs_attributes.school_board', :default => 'school_board').capitalize, :class => "control-label" %>
+      <%= f.text_field :school_board,placeholder: "Enter school_board ", :class => "form-control" %>
+    </div>
+      <div class="form-group">
+        <%= f.label :tenth_percentage, t('app.models.resume.bs_attributes.tenth_percentage', :default => 'tenth_percentage').capitalize, :class => "control-label" %>
+        <%= f.text_field :tenth_percentage,placeholder: "Enter tenth_percentage", :class => "form-control" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :plus_two, t('app.models.resume.bs_attributes.plus_two', :default => 'plus_two').capitalize, :class => "control-label" %>
+        <%= f.text_field :plus_two,placeholder: "Enter plus_two", :class => "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :plus_board, t('app.models.resume.bs_attributes.plus_board', :default => 'plus_board').capitalize, :class => "control-label" %>
+        <%= f.text_field :plus_board,placeholder: "Enter plus__board", :class => "form-control" %>
+      </div>
+
+    <div class="form-group">
+      <%= f.label :plus_two_percentage, t('app.models.resume.bs_attributes.plus_two_percentage', :default => 'plus_two_percentage').capitalize, :class => "control-label" %>
+      <%= f.text_field :plus_two_percentage,placeholder: "Enter plus_two_percentage", :class => "form-control" %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :college, t('app.models.resume.bs_attributes.college', :default => 'college').capitalize, :class => "control-label" %>
+      <%= f.text_field :college,placeholder: "Enter college", :class => "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :university, t('app.models.resume.bs_attributes.university', :default => 'university').capitalize, :class => "control-label" %>
+      <%= f.text_field :university,placeholder: "Enter university", :class => "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :graduation_percentage, t('app.models.resume.bs_attributes.graduation_percentage', :default => 'graduation_percentage').capitalize, :class => "control-label" %>
+      <%= f.text_field :graduation_percentage,placeholder: "Enter graduation_percentage", :class => "form-control" %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :pg_college, t('app.models.resume.bs_attributes.pg_college', :default => 'pg_college').capitalize, :class => "control-label" %>
+      <%= f.text_field :pg_college,placeholder: "Enter pg_college", :class => "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :pg_university, t('app.models.resume.bs_attributes.pg_university', :default => 'pg_university').capitalize, :class => "control-label" %>
+      <%= f.text_field :pg_university,placeholder:"Enter pg_university", :class => "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :pg_percentage, t('app.models.resume.bs_attr  ibutes.pg_percentage', :default => 'pg_percentage').capitalize, :class => "control-label" %>
+      <%= f.text_field :pg_percentage,placeholder: "Enter pg_percentage", :class => "form-control" %>
+    </div>
+  </fieldset>
+
+
+
+  <fieldset>
+    <legend>Skills And Qualifications</legend>
+  <div class="form-group">
+    <%= f.label :technology, t('app.models.resume.bs_attributes.technology', :default => 'technology').capitalize, :class => "control-label" %>
+    <%= f.text_field :technology,placeholder:"Enter technology", :class => "form-control" %>
+  </div>
+<!--  <div class="form-group">
+    <%= f.label :degree, t('app.models.resume.bs_attributes.degree', :default => 'degree').capitalize, :class => "control-label" %>
+    <%= f.text_field :degree, :class => "form-control" %>
+  </div> -->
+  <div class="form-group">
+    <%= f.label :projects, t('app.models.resume.bs_attributes.projects', :default => 'projects').capitalize, :class => "control-label" %>
+    <%= f.text_area :projects, :rows => 5,placeholder:"Enter projects", :class => "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :seminars_attended, t('app.models.resume.bs_attributes.seminars_attended', :default => 'seminars_attended').capitalize, :class => "control-label" %>
+    <%= f.text_area :seminars_attended,placeholder:"Enter seminars_attended", :class => "form-control" %>
+  </div>
+  <!-- <div class="form-group">
+    <%= f.label :skills, t('app.models.resume.bs_attributes.skills', :default => 'skills').capitalize, :class => "control-label" %>
+    <%= f.text_field :skills, :class => "form-control" %>
+  </div> -->
+  <div class="form-group">
+    <%= f.label :achievements, t('app.models.resume.bs_attributes.achievements', :default => 'achievements').capitalize, :class => "control-label" %>
+    <%= f.text_area :achievements,placeholder:"Enter achievements", :class => "form-control" %>
+  </div>
+</fieldset>
+
+<fieldset>
+  <legend>Work Experience</legend>
+  <div class="form-group">
+    <%= f.label :years_of_experience, t('app.models.resume.bs_attributes.years_of_experience', :default => 'years_of_experience').capitalize, :class => "control-label" %>
+    <%= f.text_field :years_of_experience,placeholder:"Enter years_of_experience", :class => "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :work_place, t('app.models.resume.bs_attributes.work_place', :default => 'work_place').capitalize, :class => "control-label" %>
+    <%= f.text_area :work_place,placeholder:"Enter work_place", :class => "form-control" %>
+  </div>
+</fieldset>
+
+  <div class="form-group">
+    <%= f.label :additional, t('app.models.resume.bs_attributes.additional', :default => 'additional').capitalize, :class => "control-label" %>
+    <%= f.text_area :additional,placeholder:"Enter additional", :class => "form-control" %>
+  </div>
+  <div class="form-group">
+       <%= f.label :location, t('app.models.resume.bs_attributes.location', :default => 'location').capitalize, :class => "control-label" %>
+       <%= f.text_field :location,placeholder:"Enter location", :class => "form-control" %>
+
+   </div>
+   <div>
+     <%= f.submit :class => "btn btn-primary", :data => { :disable_with => t(:saving, :default => "Saving...") } %>
+   </div>
+<% end %>
+
+<!-- Beautiful_scaffold - AddField - Do not remove -->
